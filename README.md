@@ -1,6 +1,5 @@
 # LCA-Advanced-CSS-Exercises
 
-# LCA-Advanced-CSS-Exercises
 **Trainee:** Beckham Daniels
 **Programme:** YouthCode Off-Site — Cohort 2, 2026
 **Course:** Course 1 — Frontend Web Development
