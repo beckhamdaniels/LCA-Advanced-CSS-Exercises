@@ -1,0 +1,88 @@
+h1 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2cm;
+  color: antiquewhite;
+  text-shadow: 1px 1px 0 black;
+  transition: ease-in 2s;
+}
+p {
+  font-size: 1cm;
+  color: dimgray;
+  font-style: italic;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition: 3s ease-in;
+}
+
+nav {
+  border-radius: 10px;
+  border: solid black 1px;
+  text-align: center;
+  font-size: 35px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-bottom: 10px;
+  background: rgba(143, 188, 244, 0.49);
+}
+
+.filter-style {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.filter-style > * {
+  width: 15cm;
+  height: 50px;
+  font-size: 20px;
+  font-family: algerian;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#ImgGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.card {
+  border: 2px solid black;
+  border-radius: 8px;
+  background: rgba(206, 171, 171, 0.103);
+  text-align: center;
+  position: relative;
+}
+
+#ImgGrid img {
+  width: 100%;
+}
+
+.overlay {
+  color: white;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+  color: black;
+}
+
+button:hover {
+  background-color: rgb(220, 129, 129);
+}
+
+@media (max-width: 768px) {
+  #ImgGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  #ImgGrid {
+    grid-template-columns: 1fr;
+  }
+}
