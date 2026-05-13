@@ -1,0 +1,257 @@
+.Banner nav {
+  text-align: right;
+  padding-bottom: 30px;
+}
+
+.Banner a{
+  text-decoration: none;
+  font-family: "Arimo", sans-serif;
+  margin-left: 30px;
+  color: #333;
+  font-size: 25px;
+}
+
+.Banner a:hover {
+  color: #8a2be2;       
+}
+
+.Banner {
+  border-bottom: 2px solid;
+  border-bottom-color: #dddfe8;
+}
+
+.hero-section {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-family: "Arimo", sans-serif;
+  font-size: 25px;
+  background-color: #f3f5ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  height: 80vh;            
+  text-align: center;
+}
+
+.hero-section button {
+  width: 220px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: #6b0cf1;
+  color: white;
+  border-color: white;
+  border-style: none;
+}
+
+.about {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  padding: 80px 100px;
+}
+
+.about img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+h2 {
+  font-family:  "Arimo", sans-serif;
+  text-align: center;
+  margin: 100px;
+  font-size: 32px;
+}
+
+.about-text p {
+  color: black;
+  padding: 8px;
+  margin-bottom: 25px;
+
+  line-height: 1.6;
+}
+
+.skills {
+  background-color: #f9fafb;
+  padding: 50px 20px;
+}
+
+.skill-cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.skill-cards article {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 30px 20px;
+  background-color: white;
+
+  flex: 0 1 31%;
+  max-width: 350px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  text-align: center;
+}
+
+article:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.skill-cards article img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+
+
+.project{
+  background-color: #ffffff;
+}
+
+.projects .project-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
+  gap: 50px;
+  padding: 10px;
+}
+
+.project-card{
+
+  display :flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 4000px ;
+}
+
+.project-card article{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 30px;
+  background: linear-gradient(to bottom, #6b0cf1 50%, white 50% );
+
+  flex: 0 1 40%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+
+  height: 350px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+ 
+.project-card p {
+  margin: 0;
+}
+
+.project-card h3 {
+  padding-bottom: 70px; 
+}
+
+.contact-section {
+  padding: 60px 20px;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 600px;      
+  margin: 0 auto;        
+}
+
+.form-group {
+  text-align: left;      
+  margin-bottom: 20px;   
+}
+
+label {
+  display: block;        
+  font-family: 'Arimo', sans-serif;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 20px;
+}
+
+input, textarea {
+  width: 100%;           /* Makes input fill the container width */
+  padding: 12px 15px;    /* Internal space for typing */
+  border: 1px solid #ddd;
+  border-radius: 8px;    /* Soft corners like your cards */
+  font-family: 'Arimo', sans-serif;
+  font-size: 16px;
+  box-sizing: border-box; /* CRITICAL: Includes padding in the width */
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #8a2be2; /* Your purple color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #6a1bbd; /* Darkens slightly on hover */
+}
+
+article label:hover{
+  cursor: pointer;
+  color: #6b0cf1;;
+  
+}
+
+.footer{
+  text-align: center;
+  padding : 50px;
+  background-color: #333;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .skill-cards article { flex: 0 1 45%; }
+}
+
+
+@media (max-width: 480px) {
+  .skill-cards article, .projects article {
+    flex: 0 1 100%;
+    grid-template-columns: 1fr;
+  }
+}
